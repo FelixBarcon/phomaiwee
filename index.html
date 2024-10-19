@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <audio id="background-music" preload="auto" autoplay loop>
+      <source
+        src="Dương Domic  - YÊU EM 2 NGÀY  Official MV.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <div class="container2">
+      <div class="content">
+        <canvas id="universe"></canvas>
+      </div>
+    </div>
+
+    <div class="title">
+      <h3 class="STARDUST1">20/10</h3>
+      <h1 class="STARDUST2">Chúc bạn iu MINH ÁNH( mía) của tớ</h1>
+      <img class="img" src="Screenshot 2024-10-19 125524.png" alt="JUNO_OKYO" />
+      <canvas id="pinkboard"></canvas>
+      <h3 class="STARDUST3">
+        lúc nào cũng xinh đẹp. Mắt cậu đẹp lắm, đừng lãng phí nó để khóc nhée
+        <br />
+        !(><)!. Đừng vì người tệ bạc trước đó mà khiến bạn mất niềm tin vào tình
+        yêu nhée.
+        <br />
+        Bởi vì mình không thích mập mờ. Chúng ta chỉ sống 1 lần trên đời. Hãy tử
+        tế, đừng vô tâm, cũng đừng lừa dối nhau!!!
+        <br />
+      </h3>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/universe.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("background-music");
+        audio.play().catch((error) => {
+          console.log("Âm thanh không thể phát tự động:", error);
+        });
+      });
+    </script>
+  </body>
+</html>
